@@ -7,8 +7,9 @@ import PropertyListings from "@/components/PropertyListings";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Drive Vest - Home",
-  description: "A modern property management platform",
+  title: "Drive Vest | Property Management",
+  description:
+    "Manage properties with Drive Vest's modern platform. Streamline leasing, payments, and tenant communication effortlessly.",
 };
 
 export default function Home() {

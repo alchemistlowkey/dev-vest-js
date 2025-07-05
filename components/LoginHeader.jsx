@@ -16,6 +16,7 @@ import { useModal } from "./ModelContext";
 import toast from "react-hot-toast";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { MenuIcon } from "lucide-react";
 
 const poppins = Poppins({
   subsets: ["latin"],

@@ -7,8 +7,9 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Drive Vest - Properties",
-  description: "A modern property management platform",
+  title: "Properties | Drive Vest",
+  description:
+    "Effortlessly manage your properties with Drive Vest. View listings, track performance, and optimize your portfolio.",
 };
 
 const poppins = Poppins({

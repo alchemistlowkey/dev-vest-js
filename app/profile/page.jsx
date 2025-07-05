@@ -8,8 +8,9 @@ import { auth } from "../auth";
 export const dynamic = "force-dynamic"; // Prevent static rendering
 
 export const metadata = {
-  title: "Drive Vest - Profile",
-  description: "A modern property management platform",
+  title: "User Profile | Drive Vest",
+  description:
+    "Customize your Drive Vest profile. Manage account settings, preferences, and properties in a secure dashboard.",
 };
 
 const ProfilePage = async () => {
