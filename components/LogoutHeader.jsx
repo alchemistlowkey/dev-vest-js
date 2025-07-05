@@ -83,7 +83,7 @@ const LogoutHeader = () => {
       <div
         className={`${
           open ? "flex" : "hidden"
-        } absolute flex-col sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_#474747_4.14%,_#222222_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-10`}
+        } absolute flex-col gap-1 sm:gap-2 sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_#474747_4.14%,_#222222_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-8 sm:pb-6`}
         onClick={() => setOpen(false)}
       >
         <Link
