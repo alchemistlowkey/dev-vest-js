@@ -21,6 +21,9 @@ import person_icon from "./images/person_icon.svg";
 import bookmark_fill from "./images/bookmark_fill.svg";
 import apartment_fill from "./images/apartment_fill.svg";
 import logo2 from "./images/logo2.jpeg";
+import john_smith from "./images/john_smith.jpg";
+import john_doe from "./images/john_doe.jpg";
+import mary_jane from "./images/mary_jane.jpg";
 
 export const assets = {
   check,
@@ -46,4 +49,7 @@ export const assets = {
   bookmark_fill,
   apartment_fill,
   logo2,
+  john_doe,
+  john_smith,
+  mary_jane,
 };
