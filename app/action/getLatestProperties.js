@@ -17,9 +17,6 @@ export default async function getLatestProperties(limit) {
     // Fetch properties
     const properties = await query;
 
-    // Log the number of properties fetched
-    console.log(`Fetched ${properties.length} properties with limit: ${limit}`);
-
     // Serialize all properties
     const serializedProperties = properties.map((property) =>
       convertToSerializeableObject(property)
