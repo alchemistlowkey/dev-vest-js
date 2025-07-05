@@ -131,7 +131,7 @@ const LoginHeader = () => {
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger className="border-none bg-white outline-none rounded-full cursor-pointer">
-            <div className="flex items-center lg:space-x-1 bg-white rounded-full p-1">
+            <div className="flex items-center lg:space-x-1 bg-white rounded-full sm:p-1 p-0">
               <Image
                 src={session?.user?.image || assets.default_profile}
                 alt="User Avatar"
