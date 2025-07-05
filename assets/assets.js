@@ -24,6 +24,8 @@ import logo2 from "./images/logo2.jpeg";
 import john_smith from "./images/john_smith.jpg";
 import john_doe from "./images/john_doe.jpg";
 import mary_jane from "./images/mary_jane.jpg";
+import tiktok_logo from "./images/tiktok-icon.svg";
+import youtube_logo from "./images/youtube-icon.svg";
 
 export const assets = {
   check,
@@ -52,4 +54,6 @@ export const assets = {
   john_doe,
   john_smith,
   mary_jane,
+  tiktok_logo,
+  youtube_logo,
 };

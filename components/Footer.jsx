@@ -1,8 +1,8 @@
 import Image from "next/image";
-
 import { ChevronDown, Globe } from "lucide-react";
 import { Poppins, Outfit } from "next/font/google";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: "100",
@@ -40,7 +40,10 @@ const Footer = () => {
               </li>
             </ul>
             <ul className="flex items-center justify-center md:justify-start gap-4 mt-2">
-              <li>
+              <Link
+                href="https://www.facebook.com/share/12MVVuv3Pka/?mibextid=wwXIfr"
+                target="_blank"
+              >
                 <Image
                   className="mb-6"
                   src={assets.facebook_logo}
@@ -49,28 +52,24 @@ const Footer = () => {
                   alt="facebook logo"
                   priority={true}
                 />
-              </li>
-              <li>
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@drivevestproperty?_t=ZS-8wi5iyMioHY&_r=1"
+                target="_blank"
+              >
                 <Image
                   className="mb-6"
-                  src={assets.x_logo}
+                  src={assets.tiktok_logo}
                   width={20}
                   height={20}
-                  alt="x logo"
+                  alt="tiktok logo"
                   priority={true}
                 />
-              </li>
-              <li>
-                <Image
-                  className="mb-6"
-                  src={assets.skype_logo}
-                  width={20}
-                  height={20}
-                  alt="skype logo"
-                  priority={true}
-                />
-              </li>
-              <li>
+              </Link>
+              <Link
+                href="https://www.instagram.com/drivevestproperty?igsh=MWhtejNmNnk1NGQydw=="
+                target="_blank"
+              >
                 <Image
                   className="mb-6"
                   src={assets.instagram_logo}
@@ -79,17 +78,20 @@ const Footer = () => {
                   alt="instagram logo"
                   priority={true}
                 />
-              </li>
-              <li>
+              </Link>
+              <Link
+                href="https://youtube.com/@drivevestproperty?feature=shared"
+                target="_blank"
+              >
                 <Image
                   className="mb-6"
-                  src={assets.linkedin_logo}
+                  src={assets.youtube_logo}
                   width={20}
                   height={20}
-                  alt="linkedin logo"
+                  alt="youtube logo"
                   priority={true}
                 />
-              </li>
+              </Link>
             </ul>
           </div>
           <div>
@@ -136,8 +138,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-8 text-base bg-[linear-gradient(97.73deg,_#E6B027_-6.96%,_#9E8441_23.5%,_#705614_92.79%)] bg-clip-text text-transparent text-center">
-          © Drive West {new Date().getFullYear()}. All rights reserved.
+        <div className="mt-8 text-base bg-[linear-gradient(97.73deg,_#E6B027_-6.96%,_#9E8441_23.5%,_#705614_92.79%)] bg-clip-text text-center text-[#E6B027]">
+          © Drive Vest {new Date().getFullYear()}. All rights reserved.
         </div>
       </div>
     </footer>
