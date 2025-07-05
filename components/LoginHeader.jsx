@@ -83,7 +83,7 @@ const LoginHeader = () => {
       </div>
 
       {/* +++++++++++++++ Large screen menu links +++++++++++++++++++ */}
-      <div className="space-x-4 md:space-x-6 hidden md:block">
+      <div className="space-x-2 lg:space-x-6 hidden md:block">
         <Link
           href="/"
           className="font-medium text-sm md:text-base hover:text-[#E6B027]"
@@ -98,7 +98,7 @@ const LoginHeader = () => {
         </Link>
         <Link
           href="/about"
-          className="font-medium text-sm md:text-base hover:text-[#E6B027]"
+          className="font-medium text-sm md:text-base hover:text-[#E6B027] text-nowrap"
         >
           About Us
         </Link>
@@ -112,7 +112,7 @@ const LoginHeader = () => {
               alt="apartment logo"
               className="w-8"
             />
-            <span className="absolute sm:top-3 top-4 text-white right-0 sm:text-xs text-[10px] bg-gray-500 rounded-full sm:w-4 sm:h-4 w-2 h-2 sm:p-0 p-[6px] flex items-center justify-center">
+            <span className="absolute sm:top-3 top-4 text-white right-0 sm:text-xs text-[8px] bg-gray-500 rounded-full sm:w-4 sm:h-4 w-2 h-2 sm:p-0 p-[5px] flex items-center justify-center">
               {propertyCount}
             </span>
           </Link>
@@ -124,14 +124,14 @@ const LoginHeader = () => {
               alt="bookmark icon"
               className="w-8"
             />
-            <span className="absolute sm:top-3 top-4 text-white right-0 sm:text-xs text-[10px] bg-gray-500 rounded-full sm:w-4 sm:h-4 w-2 h-2 sm:p-0 p-[6px] flex items-center justify-center">
+            <span className="absolute sm:top-3 top-4 text-white right-0 sm:text-xs text-[8px] bg-gray-500 rounded-full sm:w-4 sm:h-4 w-2 h-2 sm:p-0 p-[5px] flex items-center justify-center">
               {session?.user?.bookmarks?.length || 0}
             </span>
           </Link>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger className="border-none bg-white outline-none rounded-full cursor-pointer">
-            <div className="flex items-center md:space-x-2 bg-white rounded-full p-1">
+            <div className="flex items-center lg:space-x-1 bg-white rounded-full p-1">
               <Image
                 src={session?.user?.image || assets.default_profile}
                 alt="User Avatar"
@@ -142,7 +142,7 @@ const LoginHeader = () => {
               <span className="text-black hidden sm:block">
                 {session?.user?.name ?? ""}
               </span>
-              <div>
+              <div className="hidden sm:block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -195,7 +195,7 @@ const LoginHeader = () => {
       <div
         className={`${
           open ? "flex" : "hidden"
-        } absolute flex-col gap-1 sm:gap-2 sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_#474747_4.14%,_#222222_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-8 sm:pb-6`}
+        } absolute flex-col gap-1 sm:gap-2 sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_var(--text-primary)_4.14%,_var(--text-secondary)_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-6`}
         onClick={() => setOpen(false)}
       >
         <Link
