@@ -192,31 +192,33 @@ const LoginHeader = () => {
       </div>
 
       {/* ------------------ Mobile menu ------------------ */}
-      <div
-        className={`${
-          open ? "flex" : "hidden"
-        } absolute flex-col gap-1 sm:gap-2 sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_var(--text-primary)_4.14%,_var(--text-secondary)_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-6`}
-        onClick={() => setOpen(false)}
-      >
-        <Link
-          href="/"
-          className="font-medium text-sm md:text-base hover:text-[#E6B027]"
+      {open && (
+        <div
+          className={`${
+            open ? "flex" : "hidden"
+          } absolute flex-col gap-1 sm:gap-2 sm:top-[90px] top-[50px] bg-[linear-gradient(219.84deg,_var(--text-primary)_4.14%,_var(--text-secondary)_44.22%)] w-full left-0 sm:px-10 px-2.5 py-2.5 mt-2 sm:mt-0 z-10 pb-6 md:hidden`}
+          onClick={() => setOpen(false)}
         >
-          Home
-        </Link>
-        <Link
-          href="/properties"
-          className="font-medium text-sm md:text-base hover:text-[#E6B027]"
-        >
-          Properties
-        </Link>
-        <Link
-          href="/about"
-          className="font-medium text-sm md:text-base hover:text-[#E6B027]"
-        >
-          About Us
-        </Link>
-      </div>
+          <Link
+            href="/"
+            className="font-medium text-sm md:text-base hover:text-[#E6B027]"
+          >
+            Home
+          </Link>
+          <Link
+            href="/properties"
+            className="font-medium text-sm md:text-base hover:text-[#E6B027]"
+          >
+            Properties
+          </Link>
+          <Link
+            href="/about"
+            className="font-medium text-sm md:text-base hover:text-[#E6B027]"
+          >
+            About Us
+          </Link>
+        </div>
+      )}
     </header>
   );
 };
